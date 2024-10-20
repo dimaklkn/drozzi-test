@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $col-bg;
+  color: $col-text;
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $font-small;
+  font-style: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $col-text;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  max-width: 88.5rem;
+  margin-inline: auto;
+}
+
+.btn-dark {
+  background-color: $col-bg;
+  color: $col-text;
+  border: 1px solid $col-text;
+  &:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+}
+
+.btn-blue {
+  background-color: $col-accent;
+  border: 0;
+  color: $col-text;
+  transition: color 300ms ease-in-out;
+  &:hover {
+    background-color: rgb(126, 137, 254);
+  }
+}

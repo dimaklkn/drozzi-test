@@ -1,0 +1,97 @@
+.hero {
+  display: grid;
+  position: relative;
+  width: 100%;
+  padding-top: 74px;
+  text-align: center;
+  background: $col-bg;
+
+  &__text {
+    width: 20.4375rem;
+    display: grid;
+    gap: 2rem;
+    margin-inline: auto;
+    padding-top: 5rem;
+    h1 {
+      font-size: $font-xlarge;
+      font-weight: 600;
+      line-height: 3rem;
+      @include breakpoint-up(large) {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      @include breakpoint-up(large) {
+        width: 612px;
+        font-size: $font-medium;
+        line-height: 1.875rem;
+        justify-self: center;
+      }
+    }
+    @include breakpoint-up(large) {
+      width: 48rem;
+    }
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding-top: 3rem;
+    @include breakpoint-up(large) {
+      flex-direction: row;
+    }
+    button {
+      width: 253px;
+      padding-block: 1rem;
+      margin-inline: auto;
+      @include breakpoint-up(large) {
+        width: fit-content;
+        padding-inline: 2rem;
+        font-size: $font-medium;
+        margin: 0;
+      }
+    }
+  }
+  &__image-container {
+    --padding: 6rem;
+    padding-top: var(--padding);
+    width: 100%;
+    height: 676px;
+    position: relative;
+    @include breakpoint-up(large) {
+      height: 1033px;
+    }
+    img {
+      position: absolute;
+      max-width: none;
+      height: 484px;
+      width: 833px;
+      top: var(--padding);
+      left: 50%;
+      transform: translateX(-50%);
+      mix-blend-mode: lighten;
+      @include breakpoint-up(large) {
+        width: 1445px;
+        height: 841px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%; /* Adjust this value to control the fading area */
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(13, 13, 13, 1)
+      );
+      z-index: 1;
+    }
+  }
+}

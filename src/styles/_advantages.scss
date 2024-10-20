@@ -1,0 +1,119 @@
+.advantages {
+  display: grid;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-inline: 1rem;
+
+  &__text {
+    justify-self: center;
+    display: grid;
+    gap: 2.5rem;
+    width: 343px;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      width: 542px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2rem;
+      @include breakpoint-up(large) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6875rem;
+      @include breakpoint-up(large) {
+        font-size: $font-medium;
+        line-height: 1.875rem;
+      }
+    }
+  }
+
+  &__features {
+    padding-top: 6rem;
+    display: grid;
+    gap: 7rem;
+    justify-content: center;
+    @include breakpoint-up(xlarge) {
+      display: flex;
+      gap: 5rem;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    max-width: 19.875rem;
+    justify-self: center;
+    @include breakpoint-up(xlarge) {
+      max-width: 43.5rem;
+    }
+    .adv-image1 {
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    }
+    .adv-image2 {
+      position: absolute;
+      width: 11.375rem;
+      height: auto;
+      top: 74%;
+      left: 47%;
+      box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      @include breakpoint-up(xlarge) {
+        width: 25rem;
+      }
+    }
+  }
+
+  &__features-container {
+    display: grid;
+    gap: 2rem;
+    max-width: 20rem;
+    justify-self: center;
+    @include breakpoint-up(large) {
+      max-width: 21rem;
+      max-height: 659px;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    gap: 0.5rem;
+    img {
+      width: 24px;
+      height: 24px;
+      @include breakpoint-up(large) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__feature-text {
+    display: grid;
+    gap: 0.5rem;
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 27px;
+      @include breakpoint-up(large) {
+        font-size: $font-medium;
+      }
+    }
+    p {
+      font-size: $font-small;
+      line-height: 24px;
+      font-weight: 400;
+    }
+  }
+}
