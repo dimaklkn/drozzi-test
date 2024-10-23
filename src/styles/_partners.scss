@@ -1,0 +1,24 @@
+.partners {
+  display: grid;
+  gap: 4rem;
+  padding-top: 10rem;
+  padding-inline: 1rem;
+  text-align: center;
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    place-content: center;
+    img {
+      height: 45px;
+      width: auto;
+    }
+    @include breakpoint-up(large) {
+      gap: 4rem;
+      img {
+        height: 60px;
+      }
+    }
+  }
+}

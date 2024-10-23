@@ -1,6 +1,6 @@
 .fixed-header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: $col-bg;
@@ -9,15 +9,22 @@
 
 .navbar {
   width: 100%;
+  max-width: 88.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-inline: 1rem;
   padding-block: 1rem;
+  @include breakpoint-up(xlarge) {
+    padding-inline: 0;
+  }
 
   &__logo {
     width: 102px;
-    height: 32px;
+    height: auto;
+    @include breakpoint-up(large) {
+      width: 134px;
+    }
   }
 
   &__nav-desctop {

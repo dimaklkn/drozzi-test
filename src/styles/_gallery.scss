@@ -1,0 +1,78 @@
+.gallery {
+  display: grid;
+  gap: 4rem;
+  padding-top: 10rem;
+  text-align: center;
+
+  &__images {
+    width: fit-content;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 0.5rem;
+    div {
+      width: 168px;
+      height: 168px;
+    }
+    @include breakpoint-up(medium) {
+      div {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    @include breakpoint-up(xlarge) {
+      max-width: 1416px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      div {
+        height: 377px;
+        width: 336px;
+        line-height: 377px;
+      }
+      div:nth-child(5) {
+        width: 576px;
+      }
+      div:nth-child(7) {
+        width: 456px;
+      }
+    }
+  }
+
+  &__image-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+
+  button {
+    width: fit-content;
+    justify-self: center;
+    padding: 0.5rem 2rem;
+  }
+}
+
+// Add images to the gallery
+.one {
+  background-image: url(../images/gallery1.png);
+}
+.two {
+  background-image: url(../images/gallery2.png);
+}
+.three {
+  background-image: url(../images/gallery3.png);
+}
+.four {
+  background-image: url(../images/gallery4.png);
+}
+.five {
+  background-image: url(../images/gallery5.png);
+}
+.six {
+  background-image: url(../images/gallery6.png);
+}
+.seven {
+  background-image: url(../images/gallery7.png);
+}

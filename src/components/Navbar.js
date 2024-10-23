@@ -27,7 +27,7 @@ const Navbar = () => {
   };
   return (
     <header className="fixed-header">
-      <div className="navbar wrapper">
+      <div className="navbar">
         <img src={logo} alt="logo" className="navbar__logo" />
         <nav className="navbar__nav-desctop">
           <a href="#advantages" className="hover-underline-animation">

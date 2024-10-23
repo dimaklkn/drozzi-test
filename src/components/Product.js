@@ -7,7 +7,7 @@ import cardImage2 from "../images/Boards.png";
 const Product = () => {
   return (
     <section className="product wrapper">
-      <header className="product__text">
+      <header className="section-heading">
         <h2>Продукт</h2>
         <p>
           Мы уделяем особое внимание эргономике и стараемся соответствовать
@@ -15,7 +15,7 @@ const Product = () => {
         </p>
       </header>
       <div className="product__cards-container">
-        <articlle className="product__card">
+        <article className="product__card">
           <h3>Работа</h3>
           <p>
             Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
@@ -23,9 +23,9 @@ const Product = () => {
           </p>
           <button className="button btn-blue">Регистрация</button>
           <img src={cardImage1} alt="Macbook display with some graph" />
-        </articlle>
+        </article>
 
-        <articlle className="product__card">
+        <article className="product__card">
           <h3>Дизайн с реальными данными</h3>
           <p>
             Вы когда-нибудь задумывались о том, не слишком ли вы зависите от
@@ -34,7 +34,7 @@ const Product = () => {
           <button className="button btn-blue">Попробовать бесплатно</button>
 
           <img src={cardImage2} alt="Boards notifications" />
-        </articlle>
+        </article>
       </div>
     </section>
   );

@@ -11,35 +11,6 @@
     padding-top: 16rem;
   }
 
-  &__text {
-    justify-self: center;
-    display: grid;
-    gap: 2.5rem;
-    width: 343px;
-
-    @include breakpoint-up(large) {
-      width: 500px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2rem;
-      @include breakpoint-up(large) {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
-      }
-    }
-    p {
-      font-size: 1.125rem;
-      line-height: 1.6875rem;
-      @include breakpoint-up(large) {
-        font-size: $font-medium;
-        line-height: 1.875rem;
-      }
-    }
-  }
-
   &__cards-container {
     display: grid;
     gap: 2rem;
@@ -58,9 +29,10 @@
     height: 540px;
     border-radius: 1rem;
     background-color: $col-secondary;
+    padding-bottom: 2rem;
 
     @include breakpoint-up(large) {
-      grid-template-rows: 2fr 2fr 3fr 5fr 1fr;
+      grid-template-rows: 2fr 2fr 3fr 6fr;
       width: 696px;
       height: 642px;
     }
@@ -82,6 +54,7 @@
     img {
       width: 305px;
       height: auto;
+      justify-self: center;
       @include breakpoint-up(large) {
         height: 100%;
         width: auto;

@@ -94,3 +94,33 @@ h6 {
     background-color: rgb(126, 137, 254);
   }
 }
+
+//Headers for sections
+.section-heading {
+  justify-self: center;
+  display: grid;
+  gap: 2.5rem;
+  width: 343px;
+
+  @include breakpoint-up(large) {
+    width: 500px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    @include breakpoint-up(large) {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    @include breakpoint-up(large) {
+      font-size: $font-medium;
+      line-height: 1.875rem;
+    }
+  }
+}
