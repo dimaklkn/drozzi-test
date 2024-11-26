@@ -6,7 +6,7 @@ import cardImage2 from "../images/Boards.png";
 
 const Product = () => {
   return (
-    <section className="product wrapper">
+    <section className="product wrapper" id="product">
       <header className="section-heading">
         <h2>Продукт</h2>
         <p>

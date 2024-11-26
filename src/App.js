@@ -7,10 +7,13 @@ import Product from "./components/Product";
 import Gallery from "./components/Gallery";
 import Partners from "./components/Partners";
 import Feedback from "./components/Feedback";
+import Request from "./components/Request";
+import FooterNav from "./components/FooterNav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Advantages />
@@ -18,7 +21,10 @@ function App() {
       <Gallery />
       <Partners />
       <Feedback />
-    </div>
+      <Request />
+      <FooterNav />
+      <Footer />
+    </>
   );
 }
 

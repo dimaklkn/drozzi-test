@@ -10,7 +10,7 @@ import message from "../images/message-lines-fill.png";
 
 const Advantages = () => {
   return (
-    <section className="advantages wrapper">
+    <section className="advantages wrapper" id="advantages">
       <header className="advantages__text">
         <h2>Преимущества</h2>
         <p>

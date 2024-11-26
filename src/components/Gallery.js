@@ -3,7 +3,7 @@ import React from "react";
 const Gallery = () => {
   return (
     <section className="gallery wrapper">
-      <header className="section-heading gallery__text">
+      <header className="section-heading gallery__text" id="gallery">
         <h2>Галерея</h2>
         <p>
           Мы уделяем особое внимание эргономике и стараемся соответствовать

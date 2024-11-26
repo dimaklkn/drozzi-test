@@ -1,0 +1,122 @@
+.request {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+  max-width: 375px;
+  margin-inline: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #22252b;
+
+  @include breakpoint-up(xlarge) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1416px;
+    gap: 0;
+  }
+
+  &__cover {
+    display: grid;
+    gap: 3rem;
+    background-color: $col-accent;
+    padding-inline: 1rem;
+    padding-top: 3rem;
+    overflow: hidden;
+    @include breakpoint-up(xlarge) {
+      padding: 7rem;
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+
+  &__text {
+    display: grid;
+    gap: 2rem;
+    h3 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 36px;
+      @include breakpoint-up(xlarge) {
+        font-size: 56px;
+        line-height: 56px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @include breakpoint-up(xlarge) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__img-container {
+    position: relative;
+
+    height: 330px;
+    img {
+      position: absolute;
+      max-width: none;
+      height: 484px;
+      width: 833px;
+      left: 50%;
+      transform: translateX(-50%);
+      @include breakpoint-up(xlarge) {
+        height: 659px;
+        width: 1134px;
+      }
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+    @include breakpoint-up(xlarge) {
+      padding: 7rem;
+    }
+    input {
+      border: 0;
+      border-radius: 0.5rem;
+      background-color: hsl(220, 12%, 20%);
+      outline: 3px solid hsl(220, 12%, 20%);
+      padding: 0.5rem 1rem;
+      color: $col-text;
+    }
+
+    textarea {
+      min-height: 132px;
+      background-color: hsl(220, 12%, 20%);
+      border: 0;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      color: $col-text;
+    }
+    input:not(:placeholder-shown):valid {
+      outline-color: green;
+    }
+
+    input:not(:placeholder-shown):invalid {
+      outline-color: red;
+    }
+
+    input:focus:invalid {
+      outline-color: yellow;
+    }
+    p {
+      color: #707a8f;
+    }
+    a {
+      color: #707a8f;
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    padding-block: 1rem;
+  }
+
+  &__form-group {
+    display: grid;
+    gap: 0.5rem;
+  }
+}

@@ -1,5 +1,63 @@
 .feedback {
   display: grid;
+  gap: 3rem;
   padding-top: 10rem;
+  padding-inline: 1rem;
   text-align: center;
+  &__cards-container {
+    display: flex;
+    gap: 1rem;
+    justify-self: center;
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-self: center;
+    button {
+      display: flex;
+      place-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+    }
+  }
+}
+
+// modal feedback window
+
+.feedback__modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(52, 58, 64, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.feedback__modal {
+  position: relative;
+  max-width: 23.5rem;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: $col-bg;
+  border-radius: 0.5rem;
+  text-align: left;
+
+  header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    p {
+      color: #707a8f;
+    }
+  }
 }

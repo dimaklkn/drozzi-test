@@ -1,0 +1,32 @@
+.feedback-card {
+  display: grid;
+  gap: 1rem;
+  width: 295px;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 400;
+  border: 1px solid #707a8f;
+  border-radius: 0.5rem;
+  @include breakpoint-up(xlarge) {
+    width: 456px;
+    padding: 2.5rem;
+  }
+  header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    p {
+      color: #707a8f;
+    }
+  }
+  &__button {
+    color: #4452fe;
+    cursor: pointer;
+  }
+}

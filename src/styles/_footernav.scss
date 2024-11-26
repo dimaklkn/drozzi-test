@@ -1,0 +1,84 @@
+.footernav {
+  padding-block: 5rem;
+  max-width: 344px;
+  margin-inline: auto;
+  display: grid;
+  gap: 2rem;
+
+  @include breakpoint-up(xlarge) {
+    max-width: 1416px;
+    display: grid;
+    grid-template-columns: auto 336px;
+    gap: 14rem;
+  }
+
+  &__pages {
+    display: grid;
+    gap: 2rem;
+    @include breakpoint-up(xlarge) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__page {
+    max-width: 100%;
+  }
+
+  &__page-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: pointer;
+    @include breakpoint-up(xlarge) {
+      cursor: default;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    @include breakpoint-up(xlarge) {
+      display: none;
+    }
+  }
+
+  &__pages-links {
+    height: fit-content;
+    display: grid;
+    gap: 1rem;
+    padding-block: 1rem;
+    font-size: 1rem;
+    transition: height 0.3s ease-in-out;
+  }
+
+  &__address {
+    height: fit-content;
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+.chevron-up {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0);
+}
+
+.chevron-down {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.collapsed {
+  display: grid;
+  height: 0;
+  overflow: hidden;
+  transition: height 2s ease-in-out;
+  @include breakpoint-up(xlarge) {
+    height: fit-content;
+    gap: 1rem;
+    padding-block: 1rem;
+    font-size: 1rem;
+    transition: height 0.3s ease-in-out;
+  }
+}

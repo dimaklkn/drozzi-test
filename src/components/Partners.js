@@ -10,7 +10,7 @@ import ibm from "../images/ibm.png";
 
 const Partners = () => {
   return (
-    <section className="partners">
+    <section className="partners" id="partners">
       <header className="section-heading">
         <h2>Партнеры</h2>
         <p>

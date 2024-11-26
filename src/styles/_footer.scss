@@ -1,0 +1,76 @@
+.footer {
+  padding-block: 5rem;
+  max-width: 343px;
+  margin-inline: auto;
+  display: grid;
+  gap: 4rem;
+
+  @include breakpoint-up(xlarge) {
+    display: grid;
+    grid-template-columns: 134px 1fr 230px;
+    max-width: 1416px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 102px;
+    height: auto;
+    @include breakpoint-up(large) {
+      width: 134px;
+    }
+  }
+
+  &__logosocial {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    @include breakpoint-up(xlarge) {
+      width: 192px;
+      height: 48px;
+      position: absolute;
+      top: -250px;
+      left: 1080px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    gap: 2rem;
+    @include breakpoint-up(xlarge) {
+      width: 900px;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  &__policy {
+    display: grid;
+    gap: 2rem;
+    @include breakpoint-up(xlarge) {
+      display: flex;
+    }
+  }
+
+  a,
+  p {
+    color: #707a8f;
+  }
+  .button-link {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.5rem;
+    color: $col-text;
+    border-radius: 0.5rem;
+    @include breakpoint-up(xlarge) {
+      padding-inline: 1.5rem;
+    }
+  }
+}
